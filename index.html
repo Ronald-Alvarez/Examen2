@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bits Servicios</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+   <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"><img src="media/Rojofinal.png"></p>
+            <nav>
+                <a href="#somos-proya">Inicio</a>
+                <a href="#nuestros-programas">Nosotros</a>
+                <a href="#caracteristicas">Servicios</a>
+                <a href="#caracteristicas">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <div class="programas">
+                <div class="carta">
+                    <h3>Nuestra Misión</h3>
+                    <p>Ser una empresa que se enfoque en las necesidades empresariales y sociales, contribuyendo en el desarrollo de soluciones tecnológicas que ayuden a mejorar los procesos administrativos y maximización de la rentabilidad de nuestros clientes; mediante el servicio y venta de productos tecnológicos, aplicado a las necesidades específicas de cada empresa o persona; contando con profesionales altamente capacitados.</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser una empresa de reconocido prestigio local y nacional, con autonomía administrativa, excelencia en servicios y venta de productos tecnológicos. Brindando productos de excelente calidad en donde el mejoramiento continuo en todas las áreas sea de agrado para nuestros consumidores, de eficiente gestión, competitiva, con alianzas estratégicas en el ámbito local y nacional; comprometida con el servicio al cliente.</p>
+                    <button>+ Info</button>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="hero">
+                
+            <form action="" class="contact" method="POST">
+              <label for="nombres">Nombres y Apellidos</label>
+              <input type="text" name="nombres">
+        
+              <label for="correo">E-mail</label>
+              <input type="text" name="correo" id="correo">
+               
+              <label for="mensaje">Asunto</label>
+              <textarea name="mensaje" id="mensaje"></textarea>
+
+              <label for="nombres">Telefono</label>
+              <input type="text" name="celular" id="celular">
+              <input type="button" value="Enviar">
+               <script>
+
+               </script>
+            </form>
+        
+    </section>
+
+    <!--<section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">ProgramaYa!</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+            </div>
+        </div>
+    </section>
+-->
+    <section id="caracteristicas">
+        
+        <div class="container">
+           <form name="convertidor">
+            <label for="text">Nombre</label><br><br>
+              <input type="text" name="pesos"><br><br>
+              <input type="text" name="dolar"><br><br>
+            
+              <input type="button" value="Iniciar Sesion" onclick="calcular();"><br><br>
+           <script>
+            function calcular(){
+    var pes = (document.convertidor.pesos.value)*1;
+    var tot= pes / 6.96;
+    tot = tot.toFixed(2);
+    document.convertidor.dolar.value = tot;
+
+}
+           </script>
+            </form>
+              <p class="logo"><img src="media/Rojofinal.png"></p>
+            <article>
+              <ul>
+                <h3>Servicios Tecnicos</h3>
+                <li>✔️ Administracion</li>
+                <li>✔️ Flexibilidad de horarios</li>
+                <li>✔️ Soporte</li>
+                <li>✔️ Asistencia tecnica</li>
+            </ul>
+        </article>
+        <article>
+            <ul>
+                <h3>Cableados</h3>
+              <li>✔️ Estructurado de Red</li>
+              <li>✔️ Estructurado Electrico</li>
+              <li>✔️ Telefonia</li>
+              <li>✔️ Fibra Optica</li>
+          </ul>
+      </article>
+      <article>
+        <ul>
+          <h3>Asistencias Tecnicas</h3>
+          <li>✔️ A Oficinas</li>
+          <li>✔️ Empresas Publicas</li>
+          <li>✔️ Empresas Privadas</li>
+          <li>✔️ Personalizado</li>
+      </ul>
+  </article>
+        
+    <article>
+    <ul>
+        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> Facebook<br></li>
+        <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a> Youtube<br></li>
+        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a> Instagram</li>
+        <li><a href="#" class="instagram"><i class="fab fa-whatsapp"></i></a> Whatsapp</li>
+    </ul>
+    </article>
+</div>
+</section>
+    <!--<section id="final">
+        <h2>Listo para programar?</h2>
+        <button>APLICÁ YA!</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; ProgramaYa 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
